@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-graph-sample-app-go
+  labels:
+    app: node-graph-sample-app-go
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-graph-sample-app-go
+  template:
+    metadata:
+      labels:
+        app: node-graph-sample-app-go
+    spec:
+      containers:
+        - name: node-graph-sample-app-go
+          image: docker.io/sivadeep/node-graph-sample-app-go:v1
+          ports:
+            - containerPort: 80
