@@ -1,5 +1,9 @@
 # Grafana Node Graph Sample App (Go)
 
+<img width="751" alt="Screenshot 2023-09-30 at 10 55 21 AM" src="https://github.com/sivadeepN/grafana-node-graph-api-sample-go-app/assets/22883726/5d7e6026-be27-40c5-942c-ad82d9a0e946">
+
+
+
 ## Overview
 This is a simple HTTP server written in Go that serves graph data and fields for a node graph. The server provides two main endpoints:
 
@@ -64,11 +68,14 @@ Additionally, there is a health check endpoint:
          "status": "ok"
      }
      ```
+     
 
 ## Running the Server
 1. Clone the repository: `git clone https://github.com/yourusername/node-graph-sample-app-go.git`
 2. Navigate to the project directory: `cd node-graph-sample-app-go`
 3. Run the Go application: `go run main.go`
 4. The server will start on `http://localhost:5000`.
+5. URL : http://node-graph-sample-app-go.tempo-test.svc.cluster.local:5000
+<img width="1134" alt="Screenshot 2023-09-30 at 10 55 53 AM" src="https://github.com/sivadeepN/grafana-node-graph-api-sample-go-app/assets/22883726/8589404b-4595-4959-9934-cfb6411c3886">
 
 Feel free to explore and integrate this simple Go server into your projects! If you have any questions or encounter issues, please don't hesitate to reach out.
